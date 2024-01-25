@@ -3,33 +3,30 @@ pipeline{
 
          stages{
                 stage("checkout"){
-                       git checkout
+                       
                 }
                 stage("build"){
-                        mvn clean package        
-                              
-                        donet build
+                        
 
-                        npm build
                 }
                 stage ("test"){
-                         mvn test
+                        
                 }
                 stage ("artifactory"){
-                         mvn build
+                        
 
                 }
                 stage ("staging")
                 {
-                         selenium
+                        
                 }
                 stage ("deployment")
                 {
-                      echo "deploying artifact"
+                      
                  }
                 stage("monitoring")
                 {
-                       echo "monitoring"
+                       
                  }
                  }
 }
