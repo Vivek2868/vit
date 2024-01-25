@@ -10,22 +10,14 @@ pipeline{
 
                 }
                 stage ("test"){
+
+                
+                }
+                stage ("scan"){
                         
                 }
                 stage ("artifactory"){
                         
-
-                }
-                stage ("staging")
-                {
-                        
-                }
-                stage ("deployment")
-                {
-                      
-                 }
-                stage("monitoring")
-                {
                        
                  }
                  }
